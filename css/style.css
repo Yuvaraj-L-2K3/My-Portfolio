@@ -637,29 +637,29 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 30px;
+    padding: 0 20px;
     transition: hight 0.5s;
 
 }
 
 .layer h5{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight:600;
     margin-bottom: 15px;
+    color:cyan;
 }
 
 .layer p{
     color:aliceblue;
     font-size:20px;
-    line-height: 1.8;
+    line-height: 1;
 }
 
 .layer i{
-    color: #ff004f;
     margin-top: 20px;
-    font-size: 20px;
-    background: #fff;
+    font-size:28px;
+    background-color: cyan;
     width: 60px;
     height: 60px;
     display: flex;
@@ -710,7 +710,7 @@ body{
     color: rgba(177,177,177);
     font-size: 22px;
     line-height: 32px;
-    margin-bottom: 2rem;
+    margin-bottom:2rem;
 }
 
 .contact-list{
@@ -1572,9 +1572,9 @@ body{
 }
 
 .row img{
-    width:250px;
+    width:280px;
     height: 300px;
-    border-radius: 8px;
+    border-radius:8px;
     display: block;
     transition: transform 0.5s;
 }
@@ -1599,7 +1599,7 @@ body{
 }
 
 .layer h5{
-    color: white;
+    color:cyan;
     font-size: 20px;
     font-weight:600;
     margin-bottom: 15px;
@@ -1608,16 +1608,15 @@ body{
 .layer p{
     color:aliceblue;
     font-size:20px;
-    line-height: 1.8;
+    line-height: 1;
 }
 
 .layer i{
-    color: #ff004f;
     margin-top: 20px;
-    font-size: 20px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
+    font-size: 24px;
+    background-color: #0ef;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1664,9 +1663,11 @@ body{
 
 .contact-text p{
     color: rgba(177,177,177);
-    font-size: 22px;
-    line-height: 32px;
+    font-size:20px;
+    text-align:justify;
+    line-height:30px;
     margin-bottom: 2rem;
+    word-spacing: 0px;
 }
 
 .contact-list{
