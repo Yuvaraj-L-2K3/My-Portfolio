@@ -1000,11 +1000,12 @@ body{
     background-position: center;
     background-size: cover;
     align-items: center;
-    padding: 100px 10% 0;
-    margin-top:0px;
+    padding:50px 10% 0;
+    margin-top:10px;
 }
 
 .home-content{
+    margin-top:90px;
     max-width:294px;
 
 }
