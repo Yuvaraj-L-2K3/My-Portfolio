@@ -677,6 +677,15 @@ body{
     height: 100%;
 }
 
+.main-text .view a{
+    display: inline-block;
+    margin-top:50px;
+    text-align:center;
+}
+.view{
+    width: 100%;
+    text-align:center;
+}
 
 /******************** contact *************************/
 
