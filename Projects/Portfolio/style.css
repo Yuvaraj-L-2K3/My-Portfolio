@@ -1,0 +1,457 @@
+.marquee{
+    background-color:transparent;
+    
+}
+.marquee h3{
+    display: inline;
+    position: relative;
+    bottom: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.marquee img{
+    width: 80px;
+}
+
+
+
+
+nav {
+    
+    background-color: dark saddlebrown;
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:blue;
+
+    
+
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+
+} 
+.logo{
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    
+}   
+
+.menuline{
+    height: 5px;
+    width: 40px;
+    background-color: blue;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 
+nav a{
+    text-decoration: none;
+    color: blue;
+   }
+nav ul a{
+    background-color:white;
+    padding: 8px;
+    border-radius: 25px;
+
+}
+.menu{
+    cursor: pointer;
+    display: none;
+
+    
+}
+
+.menubar{
+    cursor: pointer;
+    display: none;
+}
+
+nav ul a:hover{
+    background-color: blue;
+}
+nav a:hover{
+    color: white;
+    
+}
+nav a:active{
+    color: rgb(255, 79, 108);
+}
+.Header-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sita{
+    color:aliceblue;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    animation: title 3s linear infinite;
+    
+}
+
+#sita h2{
+    position: relative;
+    color: #252839;
+    -webkit-text-stroke: 0.2vw #383d52 ;
+    
+}
+#sita h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    color: rgb(0, 81, 255);
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid rgb(0, 81, 255); ;
+    overflow: hidden;
+    animation: text 6s linear infinite;
+}
+@keyframes text{
+    0%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+@keyframes title {
+    100%{
+        text-shadow: 3px 3px 15px blue;
+
+    }
+}
+h2{
+    text-align: center;
+
+}
+
+.box h3{
+    color: orangered;
+}
+
+.box{
+    color:greenyellow;
+    border-width:5px;
+    border-color: aqua;
+    border-style: solid;
+    display:inline-block;
+    width: 275px;
+    text-align: center;
+    transition: 1s;
+    font-size: 24px;
+}
+.box img{
+    display: block;
+    width: 100%;
+}
+
+
+.box:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.College{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    }
+
+.social a{
+    color: blue;
+    text-decoration: none;
+    font-size:18px;
+    font-family: sans-serif;
+    background-color:rgba(0,0,0,0.1);
+    text-align: justify;
+    align-items: center;
+    
+    
+}
+.social a:hover{
+    cursor: pointer;
+    color: white;
+}
+.run h1{
+    color: yellow;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.edu{
+    margin-bottom: 40px;
+    font-weight:bolder;
+}
+.profile{
+    display: flex;
+    margin-top:100px;
+    width:100%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content:center;
+    align-items: center;
+}
+
+.profile-img{
+    
+    width: 350px;
+    height: 350px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    background: url('img/img11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:none;
+    outline: none;
+    animation-name: profile;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.layer{
+    background-color: rgb(0, 0, 255,0.3);
+    width:0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transition: 1s;
+    overflow: hidden;
+    z-index: -1;
+    
+
+}
+
+.profile-img:hover .layer{
+    transform: translateX(0px);
+    background-color: rgb(0, 0, 255,0.3);
+    width:100%;
+    border-radius: 50%;
+    right: 0;
+    
+}
+
+
+.profile-img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.profile-info{
+    color: aliceblue;
+    font-size: 34px;
+    font-weight:600;
+    min-width: 280px;
+   
+}
+.profile-info span{
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.profile-info span::before{
+    content: "Software Engineer";
+    color: blue;
+    animation: words 24s infinite;
+}
+
+.profile-info span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid blue;
+    right: -8px;
+    animation: cursor .8s infinite, typing 24s steps(18) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content:"Frontend Engineer";
+    }
+    21%,40%{
+        content: "Web Designer";
+    }
+    41%,60%{
+        content: "Backend Web Developer";
+    }
+    61%,80%{
+        content: "Backend Developer";
+    }
+    81%,100%{
+        content:"Full Stack Developer" ;
+    }
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+.profile-info h1,p,h2{
+    margin: 0;
+}
+.profile-cv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 30px;
+    font-size: 24px;
+    margin: 10px 0 40px;
+    font-weight: 1000;
+}
+.profile-cv a{
+    text-decoration: none;
+    border: 3px solid rgb(0, 51, 255);
+    padding: 15px;
+    border-radius: 150px;
+    color: blue;
+    background-color:transparent;
+    outline: none;
+    transition: 1s;
+    animation: cv 3s linear infinite;
+    flex-shrink: 0;
+
+}
+
+@keyframes cv{
+   100%{
+    box-shadow: 0 0 25px white;
+   }
+
+}
+.profile-cv a:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    transform: scale(1.2);
+    z-index: 2;
+
+
+}
+
+
+.social{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    transition: 2s;
+    margin: 20px;
+}
+.social a{
+    width: 80px;
+    margin: 0 5px;
+    transition: 1s;
+}
+.social img{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+.social img:hover{
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+
+
+
+
+
+
+@keyframes profile{
+    100%{
+        box-shadow: 0 0 200px rgba(0, 60, 255, 0.903) ;
+    }
+}
+
+
+
+
+
+@media all and (max-width:990px){
+    *{
+      box-sizing: border-box;
+    }
+    nav{
+        flex-direction: column;
+        
+    }
+    nav li{
+        display: block;
+        padding: 10px 0px;
+    }
+    nav ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self:flex-start;
+        margin: 10px 0px 10px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top:230px
+        }
+    .menubar{
+            display: block;
+            position: absolute;
+            right: 20px;
+            top:56px
+            }
+    .showmenu{
+        display: block;
+    }
+    .profile{
+        margin-top: 100px;
+    
+    }
+    .marquee{
+       margin: 30px 0 0 0;
+       font-size: 24px;
+    }
+    .profile-info{
+        font-size: 34px;
+        margin: 40px 0px;
+        padding: 20px;
+    }
+    
+    
+   
+}

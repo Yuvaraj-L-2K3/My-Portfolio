@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="Registration-form">
+            <form action="/projects/project2/next.html" method="get">
+                <table>
+                    <tr>
+                        <th colspan="2">
+                        <h1>Registration Form:</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Enter Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" name="password" id="password" placeholder="Enter Password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter Email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" name="age" id="age" maxlength="2" placeholder="Enter Age" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dateofbirth"><abbr title="Date of Birth">DOB:</abbr></label></td>
+                        <td><input type="date" name="dateofbirth" id="dateofbirth" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td><input type="radio" name="gender" id="gender" value="Male">
+                            <label for="gender">Male</label><br>
+                            <input type="radio" name="gender" id="gender" value="Male">
+                            <label for="gender">Female</label>
+                        </td>
+                    </tr>
+                    <tr><td><label for="relegion">Religion:</label>
+                    </td>
+                    <td>
+                        <select name="relegion" id="relegion">
+                            <option value="Hindu" label="Hindu"></option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="christian">Christian</option>
+                            <option value="Buddhism">Buddhism</option>
+                        </select>
+                    </td>
+                </tr>
+                    <tr>
+                        <td>
+                            <label for="state">Country:</label>
+                        </td>
+                        <td>
+                            <select name="state" id="state">
+                                <option value="india">India</option>
+                                <option value="china">China</option>
+                                <option value="america">U.S.A</option>
+                                <option value="africa">Africa</option>
+                                <option value="pakistan">Pakistan</option>
+                                <option value="russia">Russia</option>
+                                <option value="europe">Europe</option>
+                                <option value="srilanka">Sri Lanka</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="number">Number:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="number" id="number" maxlength="10" placeholder="Enter Number" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="resume">Resume:</label>
+                        </td>
+                        <td>
+                            <input type="file" name="resume" id="resume">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td><textarea name="address" id="address" placeholder="Enter Address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox"><label for="checkbox">I agree the terms</label>
+    
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td><td>
+                        <input type="checkbox"><label for="checkbox">I don't agree the terms</label>
+                    </td></tr>
+                    <tr>
+                        <td><button type="submit">Submit</button></td>
+                        <td><button type="reset">Reset</button></td>
+                    </tr>
+                </table>
+            </form>
+           
+           
+        </div>
+        
+    </center>
+    
+</body>
+</html>
