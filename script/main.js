@@ -7,16 +7,24 @@ var typed= new Typed (".text", {
     });
 
 
-
-    document.getElementById('btn-nav').addEventListener('click', function() {
-        var navbar = document.getElementById('navbar');
-        var overlay = document.getElementById('nav-overlay');
-        if (navbar.style.display === "block") {
-            navbar.style.display = "none";
-            overlay.style.display = "none";
-        } else {
-            navbar.style.display = "block";
-            overlay.style.display = "block";
-        }
-    });
+    const hamburger = document.querySelector(".hamburger")
+    const navMenu = document.querySelector(".nav-menu")
     
+    hamburger.addEventListener("click", mobileMenu)
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active")
+        navMenu.classList.toggle("active")
+    }
+    
+    
+    // when we click on hamburger icon its close 
+    
+    const navLink = document.querySelectorAll(".nav-link")
+    
+    navLink.forEach(n => n.addEventListener("click", closeMenu))
+    
+    function closeMenu() {
+        hamburger.classList.remove("active")
+        navMenu.classList.remove("active")
+    }
