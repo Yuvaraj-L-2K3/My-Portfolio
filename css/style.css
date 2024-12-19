@@ -774,13 +774,20 @@ nav a:hover{
 }
 
 .main-text .view a{
-    display: inline-block;
+    display:inline-block;
+    text-decoration: none;
     margin-top:50px;
     text-align:center;
 }
 .view{
     width: 100%;
     text-align:center;
+}
+
+.porfolio-content .row .layer a{
+    
+    text-decoration: none;
+    
 }
 
 /******************** contact *************************/
