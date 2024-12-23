@@ -28,3 +28,19 @@ var typed= new Typed (".text", {
         hamburger.classList.remove("active")
         navMenu.classList.remove("active")
     }
+  
+
+    // scrollreveal animation
+
+    const sr =ScrollReveal({
+        origin:'top',
+        distance:'60px',
+        duration:2500,
+        delay:400,
+    })
+    
+    sr.reveal(`.last-text, .contact-icon,.footer__group,.contact-list`)
+    sr.reveal(`.about-img`,{delay:700, origin:'bottom'})
+    sr.reveal(`.row,.view,.pricing__card ,.bottom`,{interval:100})
+    sr.reveal(` .left-sidet`,{origin:'left'})
+    sr.reveal(`.right-side`,{origin:'right'})
