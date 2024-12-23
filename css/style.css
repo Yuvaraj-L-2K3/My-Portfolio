@@ -1595,6 +1595,7 @@ body{
     padding-top:90px;
     padding-left: 0;
     margin-top:30px;
+    margin-bottom:50px;
 }
 .main-text span{
     color: #0ef;
@@ -1616,6 +1617,7 @@ body{
 }
 
 .row img{
+    margin-top: 10px;
     width:280px;
     height: 300px;
     border-radius:8px;
@@ -1817,15 +1819,16 @@ body{
 }
 .top{
     position: fixed;
-    bottom: 2.1rem;
-    right: 2.1rem;
+    bottom: 1rem;
+    right:1rem;
+    z-index: 200;
 }
 
 .top i{
     color: #000;
     background-color:#0ef;
     font-size: 24px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 0.5rem;
 }
 
