@@ -39,7 +39,7 @@ var typed= new Typed (".text", {
         delay:400,
     })
     
-    sr.reveal(`.last-text, .contact-icon,.footer__group,.contact-list`)
+    sr.reveal(`.last-text`)
     sr.reveal(`.about-img`,{delay:700, origin:'bottom'})
     sr.reveal(`.row,.view,.pricing__card ,.bottom`,{interval:100})
     sr.reveal(` .left-sidet`,{origin:'left'})
