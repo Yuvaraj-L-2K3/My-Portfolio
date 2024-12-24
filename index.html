@@ -297,11 +297,13 @@
         </div>
         
         <div class="contact-form">
-            <form action="">
-                <input type="text" class="bottom"  placeholder="Enter Your Name" required>
-                <input type="email" class="bottom" placeholder="Enter Your Email" required>
-                <input type="text" class="bottom" placeholder="Enter Your Subject">
-                <textarea name="" class="bottom" rows="10" cols="40" id="" required></textarea>
+            <form action="https://formsubmit.co/yuvarajl2025@gmail.com" method="POST">
+                <input type="text" class="bottom"  placeholder="Enter Your Name" name="name" required>
+                <input type="email" class="bottom" placeholder="Enter Your Email" name="email" required>
+                <input type="text" class="bottom" placeholder="Enter Your Subject" name="subject" required>
+                <textarea class="bottom" rows="10" cols="40" id="" name="msg" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
                 <input  type="submit" value="submit" class="send bottom" >
             </form>
         </div>
