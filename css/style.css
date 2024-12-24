@@ -1818,16 +1818,16 @@ body{
 }
 .top{
     position: fixed;
-    bottom: 2.1rem;
-    right: 2.1rem;
+    bottom: 1rem;
+    right: 1rem;
     z-index: 10;
 }
 
 .top i{
     color: #000;
     background-color:#0ef;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 22px;
+    padding:8px;
     border-radius: 0.5rem;
     
 }
