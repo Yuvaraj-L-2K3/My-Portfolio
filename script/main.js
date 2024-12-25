@@ -64,3 +64,20 @@ var typed= new Typed (".text", {
         
         window.location.href = 'mailto:' + receiver + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     });
+
+
+
+    document.addEventListener('mousemove', (event) => {
+        const trail = document.createElement('div');
+        trail.className = 'trail';
+        document.body.appendChild(trail);
+    
+        // Set trail position
+        trail.style.left = `${event.pageX}px`;
+        trail.style.top = `${event.pageY}px`;
+    
+        // Remove the trail after animation ends
+        setTimeout(() => {
+            trail.remove();
+        }, 1000); // Match this duration with the CSS fadeOut animation
+    });
