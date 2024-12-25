@@ -52,14 +52,14 @@ var typed= new Typed (".text", {
         
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
-        var subject=document.getElementById('subject').value;
+        var number=document.getElementById('number').value;
         var message = document.getElementById('message').value;
         
         var receiver = 'yuvarajl2025@gmail.com'; // Replace with the actual receiver's email
         var subject = 'Feedback from ' + name;
         var body = 'Name: ' + name +"\n" ;
         body += 'Email: ' + email + "\n";   
-        body += 'Subject: ' + subject + "\n";   
+        body += 'Number: ' + number + "\n";   
         body += 'Message:\r\n' + message;
         
         window.location.href = 'mailto:' + receiver + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
