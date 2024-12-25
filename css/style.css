@@ -769,7 +769,8 @@ body{
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
-    margin-top: 130px;
+    margin-top:0px;
+    padding-top: 120px;
 
 }
 
@@ -855,7 +856,11 @@ body{
     position: relative;
 }
 
-.contact-form form input,form textarea{
+.contact-form form input:focus{
+    background:#555557;
+}
+
+.contact-form form input,form textarea,form button{
    
     border: none;
     outline: none;
@@ -884,7 +889,9 @@ body{
     animation-delay: 2s;
     box-shadow: 0 0 10px #0ef,
     0 0 25px #0ef;
+    margin-top: 10px;
 }
+
 
 .contact-form form .send:hover{
     box-shadow: 0 0 10px cyan,
@@ -900,7 +907,7 @@ body{
     font-weight: 300;
     margin-top: 70px;
     width: 100%;
-    font-size: 18px
+    font-size: 18px;
 }
 .top{
     position: fixed;
@@ -923,11 +930,17 @@ body{
 
 .contact-form form input::placeholder{
     color: cyan;
+   
+}
+
+.contact-form form textarea::placeholder{
+    color: cyan;
 }
 
 .header-btn{
     display: none;
 }
+
 
 
 
@@ -1684,7 +1697,7 @@ body{
     width: 100%;
     flex-direction: column;
     padding-left:20px;
-    margin-top:80px;
+    margin-top:10px;
     overflow: hidden;
 
 }
@@ -1693,7 +1706,7 @@ body{
     font-size:40px;
     line-height: 1;
     text-align: center;
-    padding-top:120px;
+    padding-top:0px;
 }
 
 .contact-text h2 span{
@@ -1769,7 +1782,7 @@ body{
     position: relative;
 }
 
-.contact-form form input,form textarea{
+.contact-form form input,form textarea,form button{
    
     border: none;
     outline: none;
@@ -1798,7 +1811,8 @@ body{
     animation-delay: 2s;
     box-shadow: 0 0 10px #0ef,
     0 0 25px #0ef;
-    margin-bottom:70px;
+    margin-bottom:50px;
+    margin-top: 10px;
 }
 
 .contact-form form .send:hover{
@@ -1841,7 +1855,12 @@ body{
     color: cyan;
 }
 
-
+.error-text{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin-bottom: -5px 0 10px;
+}
 
 
 
