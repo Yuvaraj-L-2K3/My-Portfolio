@@ -1571,7 +1571,7 @@ body{
 }
 
 .progress-line.python span{
-    width:75%;
+    width:85%;
 }
 
 .progress-line.mongo span{
@@ -1620,7 +1620,7 @@ body{
 }
 
 .progress-line.python span::after{
-    content: "75%";
+    content: "85%";
 }
 
 .progress-line.mongo span::after{
