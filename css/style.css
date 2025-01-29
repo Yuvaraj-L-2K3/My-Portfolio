@@ -622,11 +622,18 @@ font-size:24px;
     width:30%;
 }
 
+.progress-line.java span{
+    width:85%;
+}
+
 .progress-line.python span{
-    width:75%;
+    width:85%;
 }
 
 .progress-line.mongo span{
+    width: 90%;
+}
+.progress-line.mysql span{
     width: 90%;
 }
 
@@ -671,11 +678,19 @@ font-size:24px;
     content: "30%";
 }
 
+.progress-line.java span::after{
+    content: "85%";
+}
+
 .progress-line.python span::after{
-    content: "75%";
+    content: "85%";
 }
 
 .progress-line.mongo span::after{
+    content:"90%";
+}
+
+.progress-line.mysql span::after{
     content:"90%";
 }
 
